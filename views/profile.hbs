@@ -1,0 +1,16 @@
+<div class="container">
+  {{#each}}
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{marca}}</h5>
+    <p class="card-text">{{color}}</p>
+    <img src="{{url}}" alt="imagen">
+    <a href="/links/delete/:id" class="btn btn-danger">Delete</a>
+    <a href="/links/edit/:id" class="btn btn-success">Edit</a>
+  </div>
+</div>
+{{else}}
+<p>No hay ninguna gorra</p>
+<a href="/links/add">Agrega una!</a>
+{{/each}}
+</div>
